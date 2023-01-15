@@ -10,40 +10,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./style/style.css">
     <script src="./index.js" defer></script>
-    <title>Document</title>
+    <title>Ember</title>
 </head>
 <body>
     <div class="form">
         <div class="header">
-            <h1>Ember App</h1>
-            <h2>Login</h2>
-            <p>Log in and start chatting!</p>
+            <h1>Ember</h1>
+            <h1>YouTube Video Downloader</h1>
         </div>
-        <form action="">
+        <form action="http://localhost:5000/download" method="GET">
             <div class="form-component">
-                <input type="email" name="email" id="email" placeholder="Email" required>
+                <input type="text" name="url" id="url" placeholder="YouTube Link..." required>
             </div>
             <div class="form-component">
-                <input type="password" name="password" id="password" placeholder="Password" required>
-                
-                <input type="checkbox" id="viewPswd" onclick="showPassword()">
-                <label for="viewPswd" class="viewPswd">
-                    <i class="fa-solid fa-eye" id="eye"></i>
-                </label>
-                
-            </div>
-            <div class="form-component">
-                <input type="checkbox" name="checkbox" id="checkbox" class="inp-checkbox" >
-                <label for="checkbox" class="checkbox">
-                    <span>
-                        <i class="fa-solid fa-check"></i>
-                    </span>
-                    <span>Remember Me</span>
-                </label>
-                <a href="#" class="pass-rec">Forgot Password</a>
-            </div>
-            <div class="form-component">
-                <button type="submit">Log In</button>
+                <button  type="submit" value="Send Data">Download</button>
             </div>
         </form>
     </div>
